@@ -87,6 +87,71 @@ console.log("Nombre completo: ", misDatosDeInstagram.nombreCompleto());
 //Array 
 //Almacena diferentes tipos de datos, su primer elemento es el indice 0
 
+const cancionesPP = [
+    "Soy el belicon", 
+    "El azul",
+    "El Tsurito",
+    "AMG",
+    {
+        2020: 5,
+        2021: 30,
+        2022: 5,
+        total:91
+    }
+];
+
+console.log("Cancion con color: " + cancionesPP[1]);
+console.log("Canciones hechas en el año 2021: " + cancionesPP[4][2021]);//Así no se recomiendo con objetos
+console.log("Canciones hechas en el año 2021: " + cancionesPP[4]["2021"]);
+console.log("Canciones hechas en el año 2021: " + cancionesPP[4].total);
+console.log("Canciones hechas en el año 2021: " + cancionesPP[4]["total"]);
+
+
+//-----------------------------------------------
+//Conversión de datos
+const myNumber = 420; //minutos de la sesion JS 01
+console.log("Num. minutos en la sesion: " + myNumber);
+//toString
+const myNumberTxt = String(myNumber);
+console.log("Num. minutos en la sesion: " + myNumber);
+
+//toNumber
+const myString = "420";
+const sumatoria = 80 + Number(myString);
+console.log("Valor de sumatoria: " + sumatoria);
+
+//toParseInt
+const myStringInteger = "420.2020";
+const sumatoriaEntera = 80 + parseInt(myStringInteger);
+console.log("Valor de sumatoria entera: " + sumatoriaEntera);
+
+//toParseFloat
+const myStringFloat = "420.2020";
+const sumatoriaFloat = 80 + parseFloat(myStringFloat);
+console.log("Valor de sumatoria float: " + sumatoriaFloat);
+
+//to Boolean 
+const isBelicoso = "false"
+let auxiliar = Boolean(isBelicoso);
+console.log(typeof isBelicoso);
+console.log(Boolean(isBelicoso));
+
+
+console.log(typeof auxiliar);
+console.log(auxiliar);
+
+if(Boolean(isBelicoso))
+    console.log("Denle su belikin");
+else 
+    console.log("Abra paso a la barredora");
+
+//Boolean
+//para que sea False, debe ser: "",0,null,undefined
+//Number
+//[] = 0, [30] = 30, [3,1] = NaN, false = 0, true = 1, function(){} = NaN
+//String
+//[]="",[1,2] = "1,2",function(){} = "function(){}",{} = "[object,object]"
+
 
 
 
