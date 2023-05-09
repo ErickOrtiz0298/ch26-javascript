@@ -1,0 +1,23 @@
+{
+  "name": "js09-manejador",
+  "version": "1.0.1",
+  "description": "Uso de NPM para manejar dependencias",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "npm",
+    "generation",
+    "js09"
+  ],
+  "author": "Erick Ortiz",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0-alpha3"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
